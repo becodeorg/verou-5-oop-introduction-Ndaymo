@@ -3,19 +3,19 @@
 declare(strict_types=1);
 require 'exercise2.php';
 
+
 $cola = new Beverage('black', 2);
 $cola->getInfo();
 echo '<br>';
-$Duvel = new Beer('Blond', 3.5, 'Duvel', 8.5);
-$Duvel->getAlcoholPercentage();
+$duvel = new Beer('Light', 3.5, 'Duvel', 8.5);
+$duvel->getAlcoholPercentage();
 echo '<br>';
-$Duvel->getInfo();
+$duvel->getInfo();
 echo '<br>';
-$Duvel->getInfo();
+echo 'The color of Duvel is ' . $duvel->color;
 echo '<br>';
-echo 'The color of Duvel is ' . $Duvel->color;
+echo 'The alcohol percentage of Duvel is ' . $duvel->alcoholPercentage;
 echo '<br>';
-echo 'The alcohol percentage of Duvel is ' . $Duvel->alcoholPercentage;
-echo '<br>';
+//This will result into the error: $cola->getAlcoholPercentage();
 
-//This will result into the error $cola->getAlcoholPercentage();
+echo "The new color of Duvel is {$duvel->color}";
