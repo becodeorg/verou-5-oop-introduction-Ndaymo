@@ -37,12 +37,12 @@ class Beer extends Beverage
 
     }
 
-    function beerInfo()
+    public function beerInfo()
     {
         echo "Hi i'm $this->name and have an alcochol percentage of $this->alcoholPercentage and I have a $this->color color.";
     }
-
-
-
-
+    public function getAlcoholPercentageValue()
+    {
+        return $this->alcoholPercentage;
+    }
 }
