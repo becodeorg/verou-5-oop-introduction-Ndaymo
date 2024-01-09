@@ -1,7 +1,7 @@
 <?php
 
 declare(strict_types=1);
-
+require 'Beverage.php';
 /* EXERCISE 1
 TODO: Create a class beverage.
 TODO: Create the properties color (string), price (float) and temperature (string) and also foresee a construct.
@@ -17,24 +17,7 @@ USE TYPEHINTING EVERYWHERE!
 */
 
 
-class Beverage
-{
-    public $color;
-    public $price;
-    public $temperature = 'cold';
 
-    public function __construct(string $color, float $price, string $temperature)
-    {
-        $this->color = $color;
-        $this->price = $price;
-        $this->temperature = $temperature;
-    }
-    public function getInfo()
-    {
-        echo "Cola is $this->color";
-    }
 
-}
-
-$cola = new Beverage('black', 2, 'cold');
+$cola = new Beverage('black', 2);
 $cola->getInfo();
